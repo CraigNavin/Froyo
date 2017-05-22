@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView_Revname"
         android:textStyle="normal|bold"
-        android:text="nfvh vbhbv"
+        android:text="Title"
         android:textAlignment="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -90,7 +90,7 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             tools:context="uk.ac.tees.p4072699.dogmapp.ReviewView"
             android:layout_width="match_parent"
-            android:layout_height="375dp"
+            android:layout_height="307dp"
             android:layout_above="@+id/textView_dis" />
     </FrameLayout>
 
@@ -106,7 +106,7 @@
 
     <Button
         android:text="@string/editRev"
-        android:id="@+id/button_savez"
+        android:id="@+id/button_save2"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/button"
@@ -156,7 +156,7 @@
         android:background="@drawable/pawback"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
-        android:layout_above="@+id/button_savez"
+        android:layout_above="@+id/button_save2"
         android:layout_toRightOf="@+id/paw_4"
         android:layout_toEndOf="@+id/paw_4" />
 
@@ -186,7 +186,7 @@
         android:scaleType="fitCenter"
         android:onClick="paw4"
         android:background="@drawable/pawback"
-        android:layout_above="@+id/button_savez"
+        android:layout_above="@+id/button_save2"
         android:layout_toRightOf="@+id/paw_2"
         android:layout_toEndOf="@+id/paw_2"
         android:layout_marginLeft="16dp"

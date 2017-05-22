@@ -12,81 +12,6 @@
     tools:context="uk.ac.tees.p4072699.dogmapp.EditWalk">
 
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/paw"
-        android:id="@+id/paw_3"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:elevation="0dp"
-        android:scaleType="fitCenter"
-        android:onClick="paw3"
-        android:layout_alignTop="@+id/paw_2"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/pawback" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/paw"
-        android:id="@+id/paw_4"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:elevation="0dp"
-        android:scaleType="fitCenter"
-        android:onClick="paw4"
-        android:layout_alignTop="@+id/paw_3"
-        android:layout_toRightOf="@+id/paw_3"
-        android:layout_toEndOf="@+id/paw_3"
-        android:background="@drawable/pawback" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/paw"
-        android:id="@+id/paw_2"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:elevation="0dp"
-        android:scaleType="fitCenter"
-        android:onClick="paw2"
-        android:layout_alignTop="@+id/paw_1"
-        android:layout_toLeftOf="@+id/paw_3"
-        android:layout_toStartOf="@+id/paw_3"
-        android:background="@drawable/pawback" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/paw"
-        android:id="@+id/paw_1"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:elevation="0dp"
-        android:scaleType="fitCenter"
-        android:onClick="paw1"
-        android:layout_marginBottom="61dp"
-        android:layout_above="@+id/button_return"
-        android:layout_toLeftOf="@+id/paw_2"
-        android:layout_toStartOf="@+id/paw_2"
-        android:background="@drawable/pawback" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/paw"
-        android:id="@+id/paw_5"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:elevation="0dp"
-        android:scaleType="fitCenter"
-        android:onClick="paw5"
-        android:layout_alignTop="@+id/paw_4"
-        android:layout_toRightOf="@+id/paw_4"
-        android:layout_toEndOf="@+id/paw_4"
-        android:background="@drawable/pawback" />
-
     <TextView
         android:text="@string/name"
         android:layout_width="wrap_content"
@@ -137,7 +62,7 @@
         android:id="@+id/button_return"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button"
-        android:layout_alignTop="@+id/button_savez"
+        android:layout_alignTop="@+id/button_save2"
         android:layout_alignRight="@+id/textView16"
         android:layout_alignEnd="@+id/textView16" />
 
@@ -152,38 +77,112 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView17"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="0" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_height="45dp"
+        android:id="@+id/button_save2"
+        android:background="@drawable/button"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/paw_1"
+        android:layout_toEndOf="@+id/paw_1" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/paw"
+        android:id="@+id/paw_4"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="paw4"
+        android:background="@drawable/pawback"
+        android:layout_above="@+id/button_save2"
+        android:layout_toLeftOf="@+id/paw_5"
+        android:layout_toStartOf="@+id/paw_5" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/paw"
+        android:id="@+id/paw_3"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="paw3"
+        android:background="@drawable/pawback"
+        android:layout_alignTop="@+id/paw_4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/paw"
+        android:id="@+id/paw_2"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="paw2"
+        android:background="@drawable/pawback"
+        android:layout_alignTop="@+id/paw_3"
+        android:layout_toLeftOf="@+id/paw_3"
+        android:layout_toStartOf="@+id/paw_3" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/paw"
+        android:id="@+id/paw_5"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="paw5"
+        android:background="@drawable/pawback"
+        android:layout_alignTop="@+id/paw_4"
+        android:layout_toRightOf="@+id/button_save2"
+        android:layout_toEndOf="@+id/button_save2" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/paw"
+        android:id="@+id/paw_1"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="paw1"
+        android:background="@drawable/pawback"
+        android:layout_alignTop="@+id/paw_2"
+        android:layout_toLeftOf="@+id/paw_2"
+        android:layout_toStartOf="@+id/paw_2" />
+
+    <TextView
         android:text="@string/totTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView19"
         android:textSize="20sp"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView17"
+        android:layout_below="@+id/tv_distance"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_time"
+        android:text="0"
         android:layout_below="@+id/textView19"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="9dp" />
-
-    <TextView
-        android:id="@+id/tv_distance"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center" />
-
-    <Button
-        android:text="@string/save"
-        android:layout_height="45dp"
-        android:id="@+id/button_savez"
-        android:background="@drawable/button"
-        android:layout_width="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/paw_1"
-        android:layout_toEndOf="@+id/paw_1" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -11,15 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="uk.ac.tees.p4072699.dogmapp.AddDogActivity">
 
-    <Button
-        android:text="@string/save"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:id="@+id/button_savez"
-        android:background="@drawable/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <EditText
         android:layout_width="350dp"
         android:layout_height="60dp"
@@ -35,5 +26,14 @@
         android:layout_centerHorizontal="true"
         android:hint="@string/dogname"
         android:padding="10dp"/>
+
+    <Button
+        android:text="@string/save"
+        android:layout_height="60dp"
+        android:id="@+id/button_update"
+        android:background="@drawable/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp" />
 
 </RelativeLayout>
